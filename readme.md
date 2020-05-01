@@ -110,9 +110,13 @@ The semaphore concept was invented by Dutch computer scientist Edsger Dijkstra i
 منبع : <br/><br/>
 [ویکی پدیا فارسی.][WikiPediaFA]
 
->آریا خوشنود - امید رضا کشتکار.
+>[آریا خوشنود][GithubAriakh55] - [امید رضا کشتکار][Githubomidnw].
+
+[Github Example1]: https://github.com/ariakh55/Semaphore/blob/master/Example01.c
 
 [WikiPediaFA]: https://fa.wikipedia.org/wiki/%D9%86%D8%B4%D8%A7%D9%86%E2%80%8C%D8%A8%D8%B1
 
-[Github Example1]: https://github.com/ariakh55/Semaphore/blob/master/Example01.c
+[GithubAriakh55]: https://github.com/ariakh55/
+
+[Githubomidnw]: https://github.com/omidnw/
 </div>
