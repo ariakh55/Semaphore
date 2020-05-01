@@ -1,5 +1,5 @@
 # Semaphore
-Semaphore is simply a variable or abstract data type used in multiproccessing. This variable is used to solve critical section problems and to achieve process synchronization in the multi processing environment. A trivial semaphore is a plain variable that is changed (for example, incremented or decremented, or toggled) depending on programmer-defined conditions.
+Semaphore is simply a **variable** or **abstract data type** used in multiproccessing. This variable is used to solve critical section problems and to achieve process synchronization in the multi processing environment. A trivial semaphore is a plain variable that is changed (for example, incremented or decremented, or toggled) depending on programmer-defined conditions.
 
 <div dir="rtl">
 
@@ -22,4 +22,6 @@ Semaphore is simply a variable or abstract data type used in multiproccessing. T
 برای درک بهتر سورس کد ۱ بهتر است به sleep های سورس کد توجه کنید.
 
 [Github Example1]: https://github.com/ariakh55/Semaphore/blob/master/Example01.c
+
+>آریا خوشنود - امید رضا کشتکار
 </div>
