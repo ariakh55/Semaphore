@@ -1,6 +1,6 @@
 # Semaphore
 Semaphore is simply a **variable** or **abstract data type** used in multiproccessing. This variable is used to solve critical section problems and to achieve process synchronization in the multi processing environment. A trivial semaphore is a plain variable that is changed (for example, incremented or decremented, or toggled) depending on programmer-defined conditions.
-The semaphore concept was invented by Dutch computer scientist Edsger Dijkstra in 1962 or 1963, when Dijkstra and his team were developing an operating system for the Electrologica X8. That system eventually became known as THE multiprogramming system. 
+The semaphore concept was invented by Dutch computer scientist Edsger Dijkstra in 1962 or 1963, when Dijkstra and his team were developing an operating system for the Electrologica X8. That system eventually became known as THE multiprogramming system.
 
 <div dir="rtl">
 
@@ -21,7 +21,7 @@ The semaphore concept was invented by Dutch computer scientist Edsger Dijkstra i
 هنگامی که فرایند کار خود را با منبع تمام نمود، یک واحد به سمافور اضافه می‌گردد. هر زمان که مقدار سمافور به صفر یا بیشتر برسد، یکی از فرایند(هایی) که به خواب رفته به صورت تصادفی یا به روش FIFO توسط سیستم‌عامل بیدار می‌شود. در این حالت بلافاصله فرایند بیدار شده منبع را در دست می‌گیرد و مجدداً پس از اتمام کار یک واحد از سمافور کم می‌شود. اگر مقدار سمافوری صفر باشد و چند فرایند بلوکه شده در آن وجود داشته باشد، با افزایش یک واحدی سمافور، مقدار سمافور همچنان صفر باقی می‌ماند اما یکی از فرایندهای بلوکه شده آزاد می‌شود.
 
 ## پیاده سازی
-ابتدا به این موضوع می پردازیم که سمافور ها چگونه و تحت چه شرایطی کار کی کنند: 
+ابتدا به این موضوع می پردازیم که سمافور ها چگونه و تحت چه شرایطی کار کی کنند:
 <div dir="ltr">
 
 ```
@@ -35,7 +35,7 @@ The semaphore concept was invented by Dutch computer scientist Edsger Dijkstra i
 ```
 </div>
 
-- متد wait (P): 
+- متد wait (P):
 مقدار سمافور را یک واحد کاهش داده و یک واحد از منبع اشتراکی را مصرف می‌کند. اگر در هنگام کاهش، مقدار منفی شد، پروسه‌ای که wait()‎ را اجرا کرده بلوکه می‌شود و در انتهای صف سمافور قرار می‌گیرد تا منابع توسط پروسه‌های دیگر آزاد شوند.
 - متد signal (V):
 مقدار سمافور را یک واحد افزایش می‌دهد. پس از افزایش دادن، اگر مقدار قبل سمافور منفی باشد (به این معنی که در حال حاضر پروسه‌هایی در صف سمافور منتظر دریافت منبع هستند)، یکی از پروسه‌ها از صف آماده وارد صف اجرا می‌شود و منبع آزاد شده را در اختیار می‌گیرد.
@@ -43,7 +43,7 @@ The semaphore concept was invented by Dutch computer scientist Edsger Dijkstra i
 ### پازیکس (Posix)
 استاندارد پازیکس دسته‌ای تابع برای کار بر روی سمافورها تعریف می‌کند که در سیستم‌عاملهای سازگار با این استاندارد قابل استفاده هستند. برای استفاده از این توابع باید فایل سرایند semaphore.h را در کد منبع درج کرد. در این استاندارد یک نوع داده به نام sem_t تعبیه شده که برای تعریف کردن یک ساختار از نوع سمافور استفاده می‌شود.
 
-به کمک تابع sem_init()‎ می‌توان یک سمافور را آماده‌سازی کرد. قبل از انجام هر کاری، این تابع باید بر روی سمافور اجرا شود. این تابع به شکل زیر اعلان شده است: 
+به کمک تابع sem_init()‎ می‌توان یک سمافور را آماده‌سازی کرد. قبل از انجام هر کاری، این تابع باید بر روی سمافور اجرا شود. این تابع به شکل زیر اعلان شده است:
 <div dir="ltr">
 
 ``` c
@@ -107,7 +107,12 @@ The semaphore concept was invented by Dutch computer scientist Edsger Dijkstra i
 
 برای درک بهتر سورس کد ۱ بهتر است به sleep های سورس کد توجه کنید.
 
-[Github Example1]: https://github.com/ariakh55/Semaphore/blob/master/Example01.c
+منبع : <br/><br/>
+[ویکی پدیا فارسی.][WikiPediaFA]
 
 >آریا خوشنود - امید رضا کشتکار.
+
+[WikiPediaFA]: https://fa.wikipedia.org/wiki/%D9%86%D8%B4%D8%A7%D9%86%E2%80%8C%D8%A8%D8%B1
+
+[Github Example1]: https://github.com/ariakh55/Semaphore/blob/master/Example01.c
 </div>
