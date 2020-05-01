@@ -1,3 +1,5 @@
+//This Example will provide better understanding of semaphores in action!!
+
 #include <stdio.h>
 #include <pthread.h>
 #include <semaphore.h>
